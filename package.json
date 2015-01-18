@@ -14,7 +14,10 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "jscs": "^1.10.0",
-    "jshint": "^2.5.11"
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jscs": "^0.8.1",
+    "grunt-simple-mocha": "^0.4.0",
+    "mocha": "^2.0.1"
+
   }
 }
