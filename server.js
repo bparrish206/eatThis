@@ -1,11 +1,11 @@
-"use strickt";
+"use strict";
 
 var express = require('express');
 var app = express();
 
-app.use(express.static(_dirname + '/app'));
+app.use(express.static(__dirname + '/app'));
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8000);
 app.listen(app.get('port'), function() {
   console.log('server running on port: %d', app.get('port'));
 });
