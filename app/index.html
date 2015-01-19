@@ -12,6 +12,8 @@
 <body>
   <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
+    <div data-ng-app="eat">
+      <div data-ng-controller="eatCtrl">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
@@ -46,12 +48,13 @@
         <h2></h2>
         <form>
           <label for='signUp'> Recipe search</label>
-          <input type='text' id='signUp' placeholder="chile">
+          <input type='text' data-ng-model="eat.food" id='signUp' placeholder="chile">
         </form>
-        <p><a href="" target="_blank" class="btn btn-success">Search Now &raquo;</a></p>
+
+        <p><a href="" target="_blank" data-ng-click="search()" class="btn btn-success">Search Now &raquo;</a></p>
       </div>
       <div class="col-xs-4">
-
+        <p> Results: {{food}} </p>
       </div>
     </div>
     <hr>
