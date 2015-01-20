@@ -1,6 +1,6 @@
 "use strict";
 
-require('angular/angular');
+var angular = require('angular/angular');
 require('angular-route');
 
 var eat = angular.module('eat', ['ngRoute']);
@@ -9,4 +9,4 @@ var eat = angular.module('eat', ['ngRoute']);
 require('./services/eatBackend.js')(eat);
 
 //controller
-require('./controllers/eatctlr.js')(eat);
+require('./controllers/eatCtrl.js')(eat);

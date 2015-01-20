@@ -14,8 +14,9 @@ module.exports = function(app) {
           }).
           error(function(data) {
             console.log(data);
-    });
-}
-};
-});
+          });
+        }
+      };
+    };
+  });
 };
