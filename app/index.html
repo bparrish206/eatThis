@@ -6,48 +6,22 @@
 
 </head>
 <body>
-  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
+
     <div data-ng-app="eatApp">
       <div data-ng-controller="eatCtrl">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="http://bparrish.com" target="_blank">Home</a></li>
-          <li><a href="http://bparrish.herokuapp.com/about.html" target="_blank">About</a></li>
-          <li><a href="http://bparrish.herokuapp.com/contact.html" target="_blank">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
   <div class="jumbotron">
     <div class="container-fluid">
       <h1>Search Great Recipes</h1>
       <p>Search over 350,000 recipes and easily customize the ingredients you want!</p>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-4">
-
-      </div>
-      <div class="col-xs-4">
-        <h2></h2>
         <form>
           <label for='signUp'> Recipe search</label>
-          <input type='text' data-ng-model="eat.food" id='signUp' placeholder="chile">
+          <input type='text' data-ng-model="eat.food" id='signUp' placeholder="chile"/>
         </form>
 
-        <p><a href="" target="_blank" data-ng-click="getRecipeJson()" class="btn btn-success">Search Now &raquo;</a></p>
+        <button data-ng-click="getRecipeJson()">Search Now</button>
       </div>
       <div class="col-xs-4">
         <p> Results: {{food}} </p>
