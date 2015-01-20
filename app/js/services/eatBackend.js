@@ -10,7 +10,7 @@ module.exports = function(app) {
         var url = "http://api.bigoven.com/recipes?pg=1&rpp=25&title_kw=" + titleKeyword + "&api_key="+process.env.APIKEY;
         $http.get(url).
           success(function (data) {
-            console.log(data);
+            return data;
           }).
           error(function(data) {
             console.log(data);

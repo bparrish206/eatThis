@@ -5,7 +5,7 @@ require('angular/angular');
 var eatApp = angular.module('eatApp', []);
 
 //services
-require('./services/eatBackend')(eatApp);
+require('./js/services/eatBackend.js')(eatApp);
 
 //controller
-require('./controllers/eatCtrl')(eatApp);
+require('./js/controllers/eatCtrl.js')(eatApp);
