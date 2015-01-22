@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Eat This</title>
-
+  <script src="../bower_components/angular/angular.js"></script>
 </head>
 <body>
-
     <div data-ng-app="eatApp">
       <div data-ng-controller="eatCtrl">
 
@@ -18,13 +17,13 @@
   </div>
         <form>
           <label for='signUp'> Recipe search</label>
-          <input type='text' data-ng-model="eat.food" id='signUp' placeholder="chile"/>
+          <input type='text' data-ng-model="eat.food" id='signUp' placeholder="chile">
         </form>
 
         <button data-ng-click="getRecipeJson()">Search Now</button>
       </div>
       <div class="col-xs-4">
-        <p> Results: {{food}} </p>
+        <p> Results: {{eat.test}} </p>
       </div>
     </div>
     <hr>
@@ -36,6 +35,6 @@
       </div>
     </div>
   </div>
-  <script src="client_bundle.js"></script>
+  <script src="js/controllers/eatCtrls.js"></script>
 </body>
 </html>
