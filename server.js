@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.use(express.static(__dirname + '/app'));  
+app.use(express.static(__dirname + '/build'));  
 
 app.set('port', process.env.PORT || 8000);
 app.listen(app.get('port'), function() {

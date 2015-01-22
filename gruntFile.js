@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      sre: ['build/']
+      src: ['build/']
     },
 
     copy: {
