@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Eat This</title>
+  <meta charset="UTF-8">
+  <link href='css/main.css' rel=stylesheet>
+  <title></title>
 </head>
-<body>
-    <div data-ng-app="eatApp">
-      <div data-ng-controller="eatCtrl">
+<bod>
+  <h1>Eat this, not that!</h1>
+  <div data-ng-app="mmmApp">
+    <div data-ng-controller="mmmCtrl" data-ng-init="index()">
+      <section>
+        <label>Enter a food item to search for:</label></br>
+        <input type="text" data-ng-model="mmm.food"/>
+        <button data-ng-click="search()">Search</button>
+      </section>
+    </br>
+  </br>
+  <div id="box" data-ng-show='view == "show"'>
+    <p>Results: {{list}}</p>
 
-  <div class="jumbotron">
-    <div class="container-fluid">
-      <h1>Search Great Recipes</h1>
-      <p>Search over 350,000 recipes and easily customize the ingredients you want!</p>
-    </div>
   </div>
-        <form>
-          <label for='signUp'> Recipe search</label>
-          <input type='text' data-ng-model="eat.food" id='signUp' placeholder="chile">
-        </form>
-
-        <button data-ng-click="getRecipeJson()">Search Now</button>
-      </div>
-      <div class="col-xs-4">
-        <p> Results: {{eat.test}} </p>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-xs-12">
-        <footer>
-          <p>&copy; 2015 Brent Parrish</p>
-        </footer>
-      </div>
-    </div>
-  </div>
-  <script src="client_bundle.js"></script>
+</div>
+</div>
+</div>
+</div>
+<script src="client_bundle.js"></script>
+<footer> This is a Node & Angular single page app that calculates the mean, median, and mode based off of user input.</footer>
+<button><a href="http://bparrish.com">Brent's Page</a></button>
 </body>
 </html>
