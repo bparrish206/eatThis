@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      sre: ['build/']
+      src: ['build/']
     },
 
     copy: {
@@ -52,14 +52,14 @@ module.exports = function(grunt) {
 
     browserify: {
       dev: {
-        src:['app/js/**/*.js'],
+        src:['app/**/*.js'],
         dest: 'build/client_bundle.js',
         options: {
           transform: ['debowerify']
         }
       },
 
-      test: {
+        test: {
         src: ['test/client/**/*.js'],
         dest: 'test/angular_testbundle.js',
         options: {

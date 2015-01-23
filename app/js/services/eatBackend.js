@@ -11,7 +11,6 @@ module.exports = function(app) {
           $http.get(url).
           success(function(data) {
             var recep = data.Instructions;
-            console.log(recep);
             return recep;
           }).
           error(function(data) {

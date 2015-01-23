@@ -4,7 +4,7 @@ require('angular-route');
 
 var mmmApp = angular.module('mmmApp', ['ngRoute']);
 //services
-require('./services/mmm_backend_service.js')(mmmApp);
+require('./js/services/eatBackend.js')(mmmApp);
 
 //controllers
-require('./controllers/mmmctlr.js')(mmmApp);
+require('./js/controllers/eatCtrl.js')(mmmApp);
