@@ -2,15 +2,17 @@
 
 module.exports = function(app) {
 
-  app.factory('eatBackend', '$http', function($http) {
+  app.factory('mmmBackend', ['$http', function($http) {
     return function() {
       return {
         getRecipeJson: function () {
-        var titleKeyword = "lasagna";
-        var url = "http://api.bigoven.com/recipes?pg=1&rpp=25&title_kw=" + titleKeyword + "&api_key="+process.env.APIKEY;
-        $http.get(url).
-          success(function (data) {
-            return data;
+          var url = "http://api.bigoven.com/recipe/" + 47725 +
+          "?api_key="+'dvx748HNLFQ2iP293b1YmmE5K5nWkfen';
+          $http.get(url).
+          success(function(data) {
+            var recep = data.Instructions;
+            console.log(recep);
+            return recep;
           }).
           error(function(data) {
             console.log(data);
@@ -18,5 +20,5 @@ module.exports = function(app) {
         }
       };
     };
-  });
+  }]);
 };

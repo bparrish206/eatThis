@@ -2,10 +2,11 @@
 
 
 module.exports = function(app) {
-  app.controller('eatCtrl', ["$scope", "eatBackend", function($scope, eatBackend) {
+  app.controller('mmmCtrl', ["$scope", "mmmBackend", function($scope, mmmBackend) {
     $scope.test = "Code rawks my socks!";
     $scope.search = function() {
-      $scope.eat.food = eatBackend().getRecipeJson();
+      $scope.list = mmmBackend().getRecipeJson();
+      $scope.view = 'show';
     };
   }]);
 };
