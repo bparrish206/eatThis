@@ -16,7 +16,7 @@
       </section>
     </br>
   </br>
-  <div id="box" ng-repeat="pic in pics" data-ng-show='view == "show"'>
+  <div id="box" ng-repeat="pic in pics track by $index" data-ng-show='view == "show"'>
     <p>{{mmm.food}}: results</p>
     <img id="pics" ng-src="{{pic}}" />
 

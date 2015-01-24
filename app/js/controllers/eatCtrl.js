@@ -10,7 +10,7 @@ module.exports = function(app) {
       success(function(data) {
         var recep = data.Instructions;
         var icons = [];
-        for (var i = 0; i<24; i++){
+        for (var i = 0; i<25; i++){
           icons.push(data['Results'][i].ImageURL120);
         }
         console.log(icons);
