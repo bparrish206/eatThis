@@ -14,7 +14,9 @@ body {
       color: #ae9c96;
       padding: 25px;
       border-radius: 10px;
-      font-size: 125%; }
+      font-size: 125%;
+      margin: 0px 175px 0px 175px;
+    }
 
       #box p {
         background-color: #ffffff;
@@ -41,4 +43,3 @@ body {
               a {
                 color: #ffffff;
                 text-decoration: none; }
-                
