@@ -2,22 +2,15 @@
 
 
 module.exports = function(app) {
-  app.controller('mmmCtrl', ["$scope", "mmmBackend", "$http", function($scope, mmmBackend, $http) {
+  app.controller('mmmCtrl', ["$scope", "$http", function($scope, $http) {
     $scope.search = function() {
       var url = "http://api.bigoven.com/recipes?pg=1&rpp=25&title_kw=" + $scope.mmm.food +
       "&api_key="+'dvx748HNLFQ2iP293b1YmmE5K5nWkfen';
       $http.get(url).
       success(function(data) {
-        var recep = data.Instructions;
-        var icons = [];
-        for (var i = 0; i<24; i++){
-          icons.push(data['Results'][i].ImageURL120);
-        }
-        console.log(icons);
-        $scope.pics = icons;
-
-        $scope.list = "data here";
-        return recep;
+        var searchObj = data['Results'];
+        console.log(searchObj);
+        $scope.searchObj = searchObj;
       }).
       error(function(data) {
         console.log(data);
