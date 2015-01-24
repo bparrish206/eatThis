@@ -12,7 +12,7 @@
       <section>
         <label>Enter a food item to search for:</label></br>
         <input type="text" data-ng-model="mmm.food"/>
-        <button data-ng-click="search()">Search</button>
+        <button id="sb" data-ng-click="search()">Search</button>
       </section>
     </br>
   </br>
@@ -20,7 +20,7 @@
     <p>{{mmm.food}}: {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
     <button><a href="{{obj.WebURL}}">Recipe</a></button>
-    <p>star rating: {{obj.StarRating}}</p>
+    <p id="ratings">Star Rating: {{obj.StarRating}}</p>
   </div>
 </div>
 </div>
