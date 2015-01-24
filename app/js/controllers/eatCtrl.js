@@ -9,11 +9,12 @@ module.exports = function(app) {
       $http.get(url).
       success(function(data) {
         var recep = data.Instructions;
+        var icons = [];
         for (var i = 0; i<24; i++){
-          var icon = data['Results'][i].ImageURL120;
+          icons.push(data['Results'][i].ImageURL120);
         }
-        console.log(icon);
-        $scope.pic = icon;
+        console.log(icons);
+        $scope.pics = icons;
 
         $scope.list = "data here";
         return recep;

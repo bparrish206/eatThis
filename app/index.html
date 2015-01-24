@@ -16,9 +16,9 @@
       </section>
     </br>
   </br>
-  <div id="box" data-ng-show='view == "show"'>
-    <p>Results: {{list}}</p>
-    <img ng-src="{{pic}}" />
+  <div id="box" ng-repeat="pic in pics" data-ng-show='view == "show"'>
+    <p>{{mmm.food}}: results</p>
+    <img id="pics" ng-src="{{pic}}" />
 
   </div>
 </div>
