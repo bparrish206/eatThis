@@ -13,9 +13,10 @@ body {
       background: #ae9c96;
       color: #ae9c96;
       padding: 10px;
+      padding-bottom: 3px;
       border-radius: 10px;
       font-size: 125%;
-      margin: 2px 175px 2px 175px;
+      margin: 4px 175px 4px 175px;
     }
 
       #box p {
@@ -46,6 +47,11 @@ body {
 #ratings {
   color: #f9f1b5;
   text-align:center;
+  padding-bottom:3px;
+}
+
+h3 {
+  padding-bottom:3px;
 }
 
 #sb {
@@ -54,7 +60,7 @@ body {
 }
 
 #pics {
-  display:inline;
+  display:inline-block;
 }
 
 #title {
