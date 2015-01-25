@@ -44,7 +44,7 @@ body {
                 color: #ffffff;
                 text-decoration: none; }
 #ratings {
-  color: #f9f1b5;  
+  color: #f9f1b5;
   text-align:center;
 }
 
@@ -55,4 +55,12 @@ body {
 
 #pics {
   display:inline;
+}
+
+#title {
+  text-align:center;
+}
+
+span {
+  color:#111111;
 }

@@ -17,12 +17,13 @@
     </br>
   </br>
   <div id="box" ng-repeat="obj in searchObj" data-ng-show='view == "show"'>
-    <p>{{mmm.food}}: {{obj.Title}}</p>
+    <p id="title">{{mmm.food}} - {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
     <button data-ng-click="recipe(obj.RecipeID)">Recipe</button>
-    <p ng-repeat="ing in ings">{{ing.Name}} {{ing.Quantity}}</p>
+    <p ng-repeat="ing in ings">{{ing.Name}} {{ing.Quantity}} {{ing.MetricUnit}}</p>
+    <p><span>{{title}}</span></p>
     <p>{{inst}}</p>
-    <h3 id="ratings"/>Star rating: {{obj.StarRating}} </h3>
+    <h3 id="ratings">Star rating: {{obj.StarRating}} </h3>
   </div>
 </div>
 </div>

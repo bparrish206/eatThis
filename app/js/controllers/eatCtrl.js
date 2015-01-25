@@ -26,6 +26,7 @@ module.exports = function(app) {
         console.log(data);
         $scope.ings = data.Ingredients;
         $scope.inst = data.Instructions;
+        $scope.title = "Instructions";
       });
     };
   }]);
