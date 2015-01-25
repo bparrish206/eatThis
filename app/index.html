@@ -19,15 +19,16 @@
   <div id="box" ng-repeat="obj in searchObj" data-ng-show='view == "show"'>
     <p>{{mmm.food}}: {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
-    <button><a href="{{obj.WebURL}}">Recipe</a></button>
-    <p id="ratings">Star Rating: {{obj.StarRating}}</p>
+    <button data-ng-click="recipe(obj.RecipeID)">Recipe</button>
+    <p>{{inst}}</p>
+    <p id="ratings"/>Star rating: {{obj.StarRating}} </p>
   </div>
 </div>
 </div>
 </div>
 </div>
 <script src="client_bundle.js"></script>
-<footer> This is a Node & Angular single page app that calculates the mean, median, and mode based off of user input.</footer>
+<footer> This app is still a work in progress.  I'm using the bigOven API to do a simple recipe search. It will soon have filters to look healthy alternatives. I'm using Node, Angular and Browserify.</footer>
 <button><a href="http://bparrish.com">Brent's Page</a></button>
 </body>
 </html>

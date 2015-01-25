@@ -12,14 +12,14 @@ body {
     #box {
       background: #ae9c96;
       color: #ae9c96;
-      padding: 25px;
+      padding: 10px;
       border-radius: 10px;
       font-size: 125%;
-      margin: 0px 175px 0px 175px;
+      margin: 2px 175px 2px 175px;
     }
 
       #box p {
-        background-color: #ffffff;
+        color: #ffffff;
         margin: 0px 50px 0px 50px;
         padding: 2px; }
 
@@ -44,12 +44,15 @@ body {
                 color: #ffffff;
                 text-decoration: none; }
 #ratings {
-  background-color: #ae9c96 !important;
-  color: #f9f1b5;
+  color: #f9f1b5 !important;
   text-align:center;
 }
 
 #sb {
   background-color: #ae9c96 !important;
   color: #f9f1b5;
+}
+
+#pics {
+  display:inline;
 }
