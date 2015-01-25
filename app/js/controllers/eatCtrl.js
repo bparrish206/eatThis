@@ -24,6 +24,7 @@ module.exports = function(app) {
       $http.get(recipeUrl).
       success(function(data) {
         console.log(data);
+        $scope.ings = data.Ingredients;
         $scope.inst = data.Instructions;
       });
     };

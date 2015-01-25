@@ -20,8 +20,9 @@
     <p>{{mmm.food}}: {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
     <button data-ng-click="recipe(obj.RecipeID)">Recipe</button>
+    <p ng-repeat="ing in ings">{{ing.Name}} {{ing.Quantity}}</p>
     <p>{{inst}}</p>
-    <p id="ratings"/>Star rating: {{obj.StarRating}} </p>
+    <h3 id="ratings"/>Star rating: {{obj.StarRating}} </h3>
   </div>
 </div>
 </div>
