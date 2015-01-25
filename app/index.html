@@ -19,8 +19,8 @@
   <div id="box" ng-repeat="obj in searchObj" data-ng-show='view == "show"'>
     <p>{{mmm.food}}: {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
-    <button><a href="{{obj.WebURL}}">Recipe</a></button>
-    <p id="ratings">Star Rating: {{obj.StarRating}}</p>
+    <button data-ng-click="recipe()">Recipe</button>
+    <p id="ratings">Star Rating: {{obj.StarRating}} {{obj.RecipeID;}}</p>
   </div>
 </div>
 </div>
