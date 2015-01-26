@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='css/main.css' rel=stylesheet>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <title></title>
 </head>
 <body>
-  <p><a class="btn btn-primary btn-lg" href="http://bparrish.com" role="button">Brent's Page</a></p>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://bparrish.com">Brent's Page</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
   <div class="jumbotron">
-  <div class="page-header">
   <h1>Eat this</h1>
+  <div class="page-header">
+  <p>An app for finding quick interesting new recipes.</p>
 </div>
   <div data-ng-app="mmmApp">
     <div data-ng-controller="mmmCtrl">
@@ -45,7 +55,8 @@
 </div>
 </div>
 <script src="client_bundle.js"></script>
-<footer> This app is still a work in progress.  I'm using the bigOven API to do a simple recipe search. It will soon have filters to look healthy alternatives. I'm using Node, Angular, Browserify and Bootstrap.</footer>
-
+<p id="footer"> This app is still a work in progress.  I'm using the bigOven API to do a simple recipe search. It will soon have filters to look healthy alternatives. I'm using Node, Angular, Browserify and Bootstrap.</p>
+<footer><p>  &copy; 2015 Brent Parrish
+</p></footer>
 </body>
 </html>
