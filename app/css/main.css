@@ -63,7 +63,11 @@ h3 {
 }
 
 #pics {
-  display:inline-block;
+  display:inline;
+}
+
+.btn btn-default navbar-btn {
+  display:inline;
 }
 
 #title {
@@ -82,4 +86,24 @@ span {
   text-align: center;
   position: bottom;
   padding: 20px;
+}
+
+td {
+  color: #111111;
+  padding: 4px;
+  background-color: #F0F8FF;
+
+}
+
+table {
+  padding: 3px;
+  margin: 0px 200px 0px 200px;
+}
+
+#label {
+  color:#111111 !important;
+  float:right;
+  display:inline-block;
+  font-size: 90%;
+  margin-left:0px;
 }

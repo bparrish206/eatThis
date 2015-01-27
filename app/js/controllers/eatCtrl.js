@@ -7,8 +7,8 @@ module.exports = function(app) {
       "&api_key="+ 'dvx748HNLFQ2iP293b1YmmE5K5nWkfen';
       $http.get(url).
       success(function(data) {
-        console.log(searchObj);
         var searchObj = data['Results'];
+        console.log(searchObj);
         $scope.searchObj = searchObj;
       }).
       error(function(data) {
@@ -25,6 +25,7 @@ module.exports = function(app) {
         $scope.ings = data.Ingredients;
         $scope.inst = data.Instructions;
         $scope.title = "Instructions";
+        $scope.label = "Ingredients";
       });
     };
   }]);
