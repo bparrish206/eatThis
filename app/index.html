@@ -40,7 +40,7 @@
       </section>
     </br>
   </br>
-  <div id="box" ng-repeat="obj in searchObj |orderBy:'StarRating' : !reverse" data-ng-show='view == "show"'>
+  <div id="box" ng-repeat="obj in searchObj | filter:'!http://redirect.bigoven.com/pics/rs/120/recipe-no-image.jpg' |orderBy:'StarRating' : !reverse" data-ng-show='view == "show"'>
     <p id="title">{{mmm.food}} - {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
     <table>
