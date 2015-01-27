@@ -43,12 +43,12 @@
   <div id="box" ng-repeat="obj in searchObj |orderBy:'StarRating' : !reverse" data-ng-show='view == "show"'>
     <p id="title">{{mmm.food}} - {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
-    <button class="btn btn-default navbar-btn" data-ng-click="recipe(obj.RecipeID)">Recipe</button>
     <table>
-    <tr ng-repeat="ing in ings">
-      <td>{{ing.Name}} {{ing.Quantity}} {{ing.MetricUnit}} </td>
-    </tr>
-  </table>
+      <tr ng-repeat="ing in ings">
+        <td>{{ing.Name}} {{ing.Quantity}} {{ing.MetricUnit}} </td>
+      </tr>
+    </table>
+    <button class="btn btn-default navbar-btn" data-ng-click="recipe(obj.RecipeID)">Recipe</button>
     <p><span>{{title}}</span></p>
     <p>{{inst}}</p>
     <h3 id="ratings">Star rating: {{obj.StarRating}} </h3>
