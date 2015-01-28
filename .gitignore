@@ -37,3 +37,4 @@ workbench.xmi
 bower_components
 node_modules
 build/
+tests/angular_testbundle.js
