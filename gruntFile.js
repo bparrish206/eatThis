@@ -20,21 +20,21 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      all: ['lib/*.js'],
+      all: ['app/*.js'],
       options: {
         jshintrc: true
       }
     },
 
     jscs: {
-      src: 'lib/**/*.js',
+      src: 'app/**/*.js',
       options: {
         config: '.jscsrc'
       }
     },
 
     simplemocha: {
-      src: ['test/mean_median_mode_tests.js']
+      src: ['test/client/eatTest.js']
     },
 
     clean: {
@@ -60,8 +60,8 @@ module.exports = function(grunt) {
       },
 
         test: {
-        src: ['test/client/**/*.js'],
-        dest: 'test/angular_testbundle.js',
+        src: ['tests/client/**/*.js'],
+        dest: 'tests/angular_testbundle.js',
         options: {
           transform: ['debowerify']
         }
