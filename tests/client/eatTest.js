@@ -13,4 +13,10 @@ describe('mmmCtlr', function() {
     $scope = $rootScope.$new();
     $controllerConstructor = $controller;
   }));
+
+  it('should be able to create a controller', function() {
+    var eatController = $controllerConstructor('mmmCtrl', {$scope: $scope});
+    expect(typeof eatController).toBe('object');
+  });
+
 });
