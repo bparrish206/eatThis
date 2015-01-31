@@ -19,4 +19,14 @@ describe('mmmCtlr', function() {
     expect(typeof eatController).toBe('object');
   });
 
+  it('should search for food item inputed', function() {
+    $controllerConstructor('mmmCtrl', {$scope: $scope});
+    $scope.mmm = {};
+    $scope.mmm.food = 'pizza';
+    $scope.search();
+
+    expect($scope.mmm.food).toBe('pizza');
+    //expect($scope.obj.Title).toBe('Bruschetta Pizza');
+  });
+
 });
