@@ -7,7 +7,8 @@ module.exports = function(config) {
   frameworks: ['jasmine'],
 
   files: [
-    'test/angular_testbundle.js'
+    'bower_components/angular/angular.js',
+    'tests/angular_testbundle.js'
   ],
 
   exclude: [
