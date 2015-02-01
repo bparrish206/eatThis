@@ -44,16 +44,15 @@
     <p id="title">{{mmm.food}} - {{obj.Title}}</p>
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
     <table>
-      <tr ng-repeat="ing in ings">
+      <tr ng-repeat="ing in ings" ng-show="obj.RecipeID == clicked">
         <td>{{ing.Name}} {{ing.Quantity}} {{ing.MetricUnit}} </td>
       </tr>
     </table>
     <button class="btn btn-default navbar-btn" data-ng-click="recipe(obj.RecipeID)">Recipe</button>
-    <p><span>{{title}}</span></p>
-    <p>{{inst}}</p>
+    <p ng-show="obj.RecipeID == clicked"><span>{{title}}</span></p>
+    <p ng-show="obj.RecipeID == clicked">{{inst}}</p>
     <h3 id="ratings">Star rating: {{obj.StarRating}} </h3>
   </div>
-</div>
 </div>
 </div>
 </div>
