@@ -18,6 +18,7 @@ module.exports = function(app) {
     };
 
     $scope.recipe = function(num) {
+      $scope.clicked = num;
       var recipeUrl = "http://api.bigoven.com/recipe/" + num + "?api_key="+ 'dvx748HNLFQ2iP293b1YmmE5K5nWkfen';
       $http.get(recipeUrl).
       success(function(data) {

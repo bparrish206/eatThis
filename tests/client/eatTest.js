@@ -26,7 +26,7 @@ describe('mmmCtlr', function() {
     $scope.search();
 
     expect($scope.mmm.food).toBe('pizza');
-    //expect($scope.obj.Title).toBe('Bruschetta Pizza');
+    expect($scope.searchObj).toBe(true);
   });
 
 });
