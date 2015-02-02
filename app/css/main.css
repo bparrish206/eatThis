@@ -42,7 +42,7 @@ body {
 
             button {
               background-color: #a6d8de;
-              display:inline;
+              display:block;
               color: #111111; }
 
               a {
@@ -68,7 +68,7 @@ h3 {
 }
 
 .btn btn-default navbar-btn {
-  display:inline;
+  display:block !important;
 }
 
 #title {
@@ -100,7 +100,7 @@ span {
 }
 
 .panel{
-  
+
   display:inline;
   float:right;
   padding:0px;
