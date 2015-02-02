@@ -42,7 +42,7 @@ body {
 
             button {
               background-color: #a6d8de;
-              display:block;
+              display:inline;
               color: #111111; }
 
               a {
@@ -94,15 +94,15 @@ span {
 #label {
   color:#111111 !important;
   float:right;
-  display:inline-block;
+  display:inline;
   font-size: 90%;
   margin-left:0px;
 }
 
 .panel{
-  margin: 0px 200px 0px 200px;
+  
   display:inline;
-  float:left;
+  float:right;
   padding:0px;
 }
 .panel-body {
@@ -115,4 +115,8 @@ span {
 
 h4 {
   text-align:center;
+}
+
+#top {
+  display:inline;
 }
