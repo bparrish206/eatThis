@@ -42,17 +42,22 @@
   </br>
   <div id="box" ng-repeat="obj in searchObj | filter:'!http://redirect.bigoven.com/pics/rs/120/recipe-no-image.jpg' |orderBy:'StarRating' : !reverse" data-ng-show='view == "show"'>
     <p id="title">{{mmm.food}} - {{obj.Title}}</p>
+    <div id="top">
     <img id="pics" ng-src="{{obj.ImageURL120}}" />
-    <table>
-      <tr ng-repeat="ing in ings" ng-show="obj.RecipeID == clicked">
-        <td>{{ing.Name}} {{ing.Quantity}} {{ing.MetricUnit}} </td>
-      </tr>
-    </table>
+    <div class="panel panel-default" style="width:400px" ng-show="obj.RecipeID == clicked">
+      <div class="panel-heading" style="width:400px">
+    <h4 ng-show="obj.RecipeID == clicked">{{label}}</h4>
+  </div>
+        <div class="panel-body" style="width:400px; min-height: 10; max-height: 10" ng-repeat="ing in ings" ng-show="obj.RecipeID == clicked">
+        <p ng-show="obj.RecipeID == clicked"><span>{{ing.Name}} {{ing.Quantity}} {{ing.MetricUnit}}</span></p>
+      </div>
+    </div>
     <button class="btn btn-default navbar-btn" data-ng-click="recipe(obj.RecipeID)">Recipe</button>
     <p ng-show="obj.RecipeID == clicked"><span>{{title}}</span></p>
     <p ng-show="obj.RecipeID == clicked">{{inst}}</p>
     <h3 id="ratings">Star rating: {{obj.StarRating}} </h3>
   </div>
+</div>
 </div>
 </div>
 </div>
