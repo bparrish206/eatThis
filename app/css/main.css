@@ -90,7 +90,8 @@ h3 {
 
 #title {
   text-align:center;
-  color: #f9f1b5;
+  color: #f9f1b5 !important;
+  padding-bottom:8px;
 }
 
 span {
