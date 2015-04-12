@@ -26,6 +26,10 @@ body {
       margin-top: -3%;
     }
 
+    .col-lg-6 {
+      width:auto !important;
+    }
+
 
       #box p {
         color: #ffffff;
@@ -122,7 +126,7 @@ div#frame {
 #sub-title {
   color: #f9f1b5 !important;
   margin-left: 22% !important;
-  margin-top: -21% !important;
+  margin-top: -18% !important;
 }
 
 span {
