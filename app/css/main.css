@@ -5,6 +5,7 @@ body {
     text-align: center;
     color: #f9f1b5;
     padding: 25px;
+    padding-bottom:0;
     font-family: comic;
     text-shadow: 1px 1px #001F3F;
     font-size: 350%; }
@@ -16,13 +17,13 @@ body {
       padding-bottom: 3px;
       border-radius: 10px;
       font-size: 125%;
-      margin: 10px 150px 10px 150px;
+      margin: 10px 250px 10px 250px;
     }
 
     .row {
-      margin-right: -5% !important;
+      margin-right: 0% !important;
       margin-left: 55% !important;
-      margin-top: -5%;
+      margin-top: -3%;
     }
 
 
@@ -35,14 +36,17 @@ body {
           border: 1px solid #ae9c96;
           background-color: #a6d8de;
           text-align: center;
-          margin: 0px 50% 0 28%;
-          width: 50%;
+          margin: 0px 18% 0 18%;
+          width: 64%;
           padding: 30px;
           }
 
           label {
+            font-size: 18px;
+            text-decoration: underline;
+            padding-bottom: 3px;
             float:left;
-            }
+          }
 
           footer {
             text-align: center;
@@ -62,6 +66,7 @@ body {
                 text-decoration: none; }
 #ratings {
   color: #f9f1b5;
+  font-weight:bold;
   text-align:center;
   padding-bottom:3px;
 }
@@ -75,15 +80,21 @@ h3 {
   color: #f9f1b5;
 }
 
+div#frame {
+  padding: 15px 0;
+  margin-bottom: 35px;
+}
+
 #pics {
   display:inline;
   margin:10px;
 }
 
 .r-button {
-  background:#F0F8FF;
-  color:#111111;
-  margin-left:10px;
+  background: #f5f5f5;
+  color:black;
+  margin-left:22%;
+  margin-top: 15px;
   display:inline;
   border-radius: .25em;
   text-align: center;
@@ -97,13 +108,21 @@ h3 {
 }
 
 .r-button:hover {
-  background-color: #E6E8FA;
+  background-color: #a6d8de;
+  color:black;
 }
 
 #title {
   text-align:center;
   color: #f9f1b5 !important;
+  border-bottom:1px solid #e1e1e1;
   padding-bottom:8px;
+}
+
+#sub-title {
+  color: #f9f1b5 !important;
+  margin-left: 22% !important;
+  margin-top: -21% !important;
 }
 
 span {
@@ -136,6 +155,11 @@ span {
   padding:0px;
   margin:5px;
 }
+
+.panel.panel-default {
+  margin-top:-130px;
+}
+
 .panel-body {
   text-align:center;
   font-size:75%;

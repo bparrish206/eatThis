@@ -40,9 +40,13 @@
       </section>
     </br>
   </br>
-  <div id="box" ng-repeat="obj in searchObj | filter:'!http://redirect.bigoven.com/pics/rs/120/recipe-no-image.jpg' |orderBy:'StarRating' : !reverse" data-ng-show='view == "show"'>
-    <p id="title">{{mmm.food}} - {{obj.Title}}</p>
-      <button class="r-button" data-ng-click="recipe(obj.RecipeID)">Recipe <img id="pics" ng-src="{{obj.ImageURL120}}" /></button>
+    <div id="box" ng-repeat="obj in searchObj | filter:'!http://redirect.bigoven.com/pics/rs/120/recipe-no-image.jpg' |orderBy:'StarRating' : !reverse" data-ng-show='view == "show"'>
+    <p id="title">{{mmm.food}}</p>
+    <div id="frame">
+      <img id="pics" ng-src="{{obj.ImageURL120}}" />
+      <p id="sub-title">{{obj.Title}}</p>
+      <button class="r-button" data-ng-click="recipe(obj.RecipeID)">Recipe</button>
+    </div>
     <div class="panel panel-default" style="width:300px" ng-show="obj.RecipeID == clicked">
       <div class="panel-heading" style="width:300px">
     <h4 ng-show="obj.RecipeID == clicked">{{label}}</h4>
